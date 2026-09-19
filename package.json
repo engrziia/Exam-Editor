@@ -1,0 +1,18 @@
+{
+  "name": "exam-text-editor",
+  "version": "1.0.0",
+  "description": "Lockdown exam text editor with spellcheck disabled",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && electron-packager . Exam-Editor --platform=darwin --arch=x64 --out=dist --overwrite --ignore='^/dist$'"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.2"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}
